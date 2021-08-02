@@ -1,0 +1,43 @@
+514 : 입력 - 자가진단6
+제한시간
+1000 ms   
+ 
+메모리제한
+0 MB   
+ 
+해결횟수
+3896 회   
+ 
+시도횟수
+12332 회   
+문제
+키를 입력받아 출력하는 프로그램을 작성하라.
+
+
+ 
+
+(입력할때 "height = " 문장을 먼저 출력하고 키를 입력 받아야 합니다.)
+
+
+입력 예
+height = 170
+출력 예
+Your height is 170cm.
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+ 
+         
+        int height=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("height = ");
+        height = scanner.nextInt();
+        scanner.close();
+         
+         
+        System.out.printf("Your height is %dcm.",height);
+ 
+    }
+ 
+}
