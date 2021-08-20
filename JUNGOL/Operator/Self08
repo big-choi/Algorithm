@@ -1,0 +1,40 @@
+문제
+3개의 정수를 입력 받아 첫 번째 수가 가장 크면 1 아니면 0을 출력하고 세 개의 수가 모두 같으면 1 아니면 0을 출력하는 프로그램을 작성하시오.
+
+(JAVA는 1이면 true, 0이면 false를 출력한다.)
+
+
+입력 예
+10 9 9
+
+출력 예
+1 0
+
+ 
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+ 
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        scanner.close();
+ 
+        if (a > b && a > c) {
+            System.out.printf("%b\n", true);
+        } else {
+            System.out.printf("%b\n", false);
+        }
+ 
+        if (a == b && a == c && b == c) {
+            System.out.printf("%b\n", true);
+        } else {
+            System.out.printf("%b\n", false);
+        }
+ 
+    }
+ 
+}
